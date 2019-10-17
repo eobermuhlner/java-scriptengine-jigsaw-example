@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+sourceCompatibility = '1.11'
+targetCompatibility = '1.11'
+
+mainClassName = 'ch.obermuhlner.scriptengine.example.ScriptEngineExample'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'ch.obermuhlner:java-scriptengine:1.1.1.JAVA_8'
+}
+

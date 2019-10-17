@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.gradle.java.experimental-jigsaw' version '0.1.1'
+}
+
+javaModule.name = 'ch.obermuhlner.scriptengine.example'
+
+sourceCompatibility = '1.11'
+targetCompatibility = '1.11'
+
+mainClassName = 'ch.obermuhlner.scriptengine.example.ScriptEngineExample'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'ch.obermuhlner:java-scriptengine:1.1.1.JAVA_8'
+}
+
